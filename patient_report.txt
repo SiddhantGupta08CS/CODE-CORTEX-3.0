@@ -1,0 +1,65 @@
+
+==================================================
+              AI HEALTH ASSESSMENT
+==================================================
+
+Generated:
+18-09-2026 14:11
+
+
+PATIENT INFORMATION
+--------------------------------------------------
+
+Age: 52
+Sex: 1
+
+
+CARDIOVASCULAR MODEL ASSESSMENT
+--------------------------------------------------
+
+Model assessment:
+Higher model-estimated risk category
+
+Model score:
+84.00%
+
+
+INPUT PARAMETERS
+--------------------------------------------------
+
+Chest-pain type: 1
+Resting blood pressure: 130
+Cholesterol: 220
+Fasting blood sugar: 0
+Resting ECG: 1
+Maximum heart rate: 150
+Exercise-induced angina: 0
+ST depression: 1.0
+Slope: 1
+Major vessels: 0
+Thalassemia category: 2
+
+
+IMPORTANT
+--------------------------------------------------
+
+This is an AI-based model assessment using the
+provided dataset.
+
+It is NOT a medical diagnosis and should not be
+used by itself to make treatment decisions.
+
+Professional medical evaluation should be sought
+when appropriate.
+
+
+EMERGENCY SUPPORT
+--------------------------------------------------
+
+If the patient experiences an actual emergency,
+activate the application's SOS workflow and seek
+professional emergency assistance.
+
+==================================================
+                 END OF REPORT
+==================================================
