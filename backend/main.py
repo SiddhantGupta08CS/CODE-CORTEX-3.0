@@ -78,7 +78,7 @@ def home():
 @app.post("/assess")
 def assess(patient: PatientData):
 
-    # Convert API input into heart model format
+    
 
     heart_patient = {
 
@@ -98,7 +98,7 @@ def assess(patient: PatientData):
     }
 
 
-    # Convert API input into stroke model format
+    
 
     stroke_patient = {
 
@@ -115,7 +115,7 @@ def assess(patient: PatientData):
     }
 
 
-    # Run both models
+    
 
     result = assess_health(
         heart_patient,
