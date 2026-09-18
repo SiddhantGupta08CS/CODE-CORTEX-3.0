@@ -1,86 +1,43 @@
-from datetime import datetime
 
-
-def generate_health_report(
-    patient,
-    assessment
-):
-    """
-    Generate a combined health assessment report.
-
-    The report contains model-estimated results from
-    the cardiovascular and stroke models.
-
-    This is NOT a medical diagnosis.
-    """
-
-    heart = assessment["heart"]
-    stroke = assessment["stroke"]
-
-  
-
-    if heart["prediction"] == 1:
-        heart_status = (
-            "Higher model-estimated risk category"
-        )
-    else:
-        heart_status = (
-            "Lower model-estimated risk category"
-        )
-
-
-
-    if stroke["prediction"] == 1:
-        stroke_status = (
-            "Higher model-estimated risk category"
-        )
-    else:
-        stroke_status = (
-            "Lower model-estimated risk category"
-        )
-
-   
-
-    report = f"""
 ==================================================
               HEALTH AI REPORT
 ==================================================
 
 Generated:
-{datetime.now().strftime("%d-%m-%Y %H:%M")}
+18-09-2026 15:50
 
 
 PATIENT PROFILE
 --------------------------------------------------
 
-Age: {patient["age"]}
-Gender: {patient["gender"]}
+Age: 52
+Gender: Male
 
 
 CARDIOVASCULAR MODEL
 --------------------------------------------------
 
 Assessment:
-{heart_status}
+Higher model-estimated risk category
 
 Model score:
-{heart["score"] * 100:.2f}%
+84.00%
 
 
 STROKE MODEL
 --------------------------------------------------
 
 Assessment:
-{stroke_status}
+Lower model-estimated risk category
 
 Model score:
-{stroke["score"] * 100:.2f}%
+1.75%
 
 
 OVERALL MODEL ASSESSMENT
 --------------------------------------------------
 
-{assessment["overall"]}
+One or more models returned a higher model-estimated risk category.
 
 
 IMPORTANT INFORMATION
@@ -108,6 +65,3 @@ emergency assistance.
 ==================================================
                  END OF REPORT
 ==================================================
-"""
-
-    return report
